@@ -74,7 +74,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.provider "virtualbox" do |v, override|
     v.gui = false
-    v.memory = 2048
+    v.memory = 8192
     v.cpus = 2
     v.linked_clone = true
     override.vm.network :private_network, ip: "192.168.99.90", gateway: "192.168.99.1"
